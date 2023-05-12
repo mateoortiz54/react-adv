@@ -1,6 +1,5 @@
-import React from 'react'
 import { ProductCard, ProductImage,ProductButtons, ProductTitle } from '../components';
-
+import '../styles/custom-styles.css'
 
 
 const product = {
@@ -12,7 +11,7 @@ const product = {
 
 export const ShoppingPage = () => {
   return (
-    <div>
+    <div >
         <h1>Shopping Store</h1>
         <hr />
         <div style={{
@@ -20,17 +19,30 @@ export const ShoppingPage = () => {
           flexDirection: 'row',
           flexWrap: 'wrap'
         }}>
-          {/* <ProductCard product={product}>
-            <ProductCard.Image />
-            <ProductCard.Title title={'Hola Mundo'}/>
-            <ProductCard.Buttons/>
-          </ProductCard>   */}
+          <ProductCard product={product} className="bg-dark text-white">
+            <ProductCard.Image className='custom-image'/>
+            <ProductCard.Title/>
+            <ProductCard.Buttons />
+          </ProductCard>  
            
-          <ProductCard product={product}>
-            <ProductImage />
-            <ProductTitle />
-            <ProductButtons  />
+          <ProductCard 
+              product={product}
+              className="bg-dark text-white"
+              >
+            <ProductImage className='custom-image'/>
+            <ProductTitle className="text-bold" />
+            <ProductButtons className="custom-bottons" />
           </ProductCard>    
+          <ProductCard 
+              product={product}
+              
+              >
+            <ProductImage />
+            <ProductTitle  />
+            <ProductButtons style={{
+                backgroundColor: '#70D1F8'
+              }} />
+          </ProductCard> 
           
 
         </div>

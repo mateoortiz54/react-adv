@@ -5,9 +5,10 @@ import { ProductButtons } from './ProductButtons';
 import { ProductImage } from './ProductImage';
 import { ProductTitle } from './ProductTitle';
 
-export * from './ProductTitle';
-export * from './ProductButtons';
-export * from './ProductImage';
+export {ProductTitle} from './ProductTitle';
+
+export {ProductButtons} from './ProductButtons';
+export {ProductImage} from './ProductImage';
 // export * from './ProductCard';
 
 export const ProductCard:ProductCardHOCProps = Object.assign(ProducCardHOC, {
