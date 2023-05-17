@@ -43,7 +43,7 @@ export interface ProductInCart extends Product {
   
 export interface InitialValues {
     count: number;
-    maxCount: number;
+    maxCount?: number;
 }
 
 export interface ProductCardChildrenProps{
