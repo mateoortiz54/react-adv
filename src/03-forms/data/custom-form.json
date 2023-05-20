@@ -1,0 +1,57 @@
+[
+    {
+        "type": "input",
+        "name": "firstName",
+        "label": "Give your name",
+        "placeholder": "Mateo",
+        "value": "Mateito",
+        "validations": [{
+                "type": "required"
+            },
+            {
+                "type": "minLength"
+               
+            }
+        ]
+    },
+    {
+        "type": "input",
+        "name": "lastName",
+        "label": "Give your lastname",
+        "placeholder": "Ortiz",
+        "value": "",
+        "validations": [{
+            "type": "required"
+        }]
+    },
+    {
+        "type": "email",
+        "name": "email",
+        "label": "Give your email",
+        "placeholder": "antonio@gmail.com",
+        "value": "",
+        "validations": [{
+            "type": "required"
+        },
+        {
+            "type":"email"
+        } 
+        ]       
+    },
+    {
+        "type": "select",
+        "name": "movFav",
+        "label": "Choose any option",
+        "placeholder": "",
+        "value": "",
+        "option": [
+            {"id":1, "label":"Avengers"},
+            {"id":2, "label":"Suicide Squad"},
+            {"id":3, "label":"Jhon Wick"}
+        ],
+        "validations": [{
+            "type": "required"
+        }]
+
+    }
+]

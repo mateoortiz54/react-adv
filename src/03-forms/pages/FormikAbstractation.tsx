@@ -49,19 +49,21 @@ export const FormikAbstractation = () => {
                             name='firstName' 
                             label='First Name'
                             placeholder='Mateo'
-                         />
+                        />
 
                         <MyTextInput 
                             name='lastName' 
                             label='Last Name'
                             placeholder='Ortiz'
-                         />
+                        />
+
                         <MyTextInput 
                             name='email' 
                             label='Email Address'
                             placeholder='mateo@gmail.com'
                             type='email'
                         />
+                        
                         <MySelect  name="typeJob" label='Job Type'>
                             <option value=''>Pick something</option>
                             <option value='developer'>Developer</option>
